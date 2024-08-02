@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Mako&family=Salsa&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text-normal);
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+:root {
+    --primary-color: #e4f3d8;
+    --secondary-color: #8d093e;
+    --text-color: black;
+    --hover-color: #ffa02e;
+    --background-color: #b7d2d4;
+    --header-footer-color: #8d093e;
+    --text-color-alt: white;
+    --width-content: 1200px;
+    --text-normal: "Mako", sans-serif;
+    --text-title: "Belanosima", cursive;
+}
+
+.width-content {
+    width: var(--width-content);
+    margin: 0 auto;
+}
+
+.fondo-color {
+    background-color: var(--header-footer-color);
+    color: var(--text-color-alt);
+}
+
+/* Para volver al inicio */
+.volver-inicio a {
+    padding: 10px;
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
+.volver-inicio a:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Enlace oculto */
+.skip-link {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Títulos y textos */
+h1,
+h2,
+h3 {
+    font-family: var(--text-title);
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 15px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+
+h3 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+p {
+    padding-bottom: 15px;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--header-footer-color);
+    color: var(--text-color-alt);
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    border-top: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    margin: 20px 0;
+    background-color: var(--header-footer-color);
+    color: var(--text-color-alt);
+}
+
+header li {
+    padding: 15px 12px;
+}
+
+header li:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+header ul a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+/* main */
+main {
+    padding: 20px 0;
+}
+
+section > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 4px solid var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+section div img {
+    width: 48%;
+}
+
+section > div > div {
+    padding: 20px;
+    width: 48%;
+}
+
+.galeria-fotos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galeria-fotos img {
+    margin: 15px 0;
+    width: 48%;
+}
+
+/* footer */
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    padding: 30px 0;
+    background-color: var(--header-footer-color);
+    color: var(--text-color-alt);
+}
+
+footer > section {
+    padding: 0 20px;
+}
+
+footer .volver-inicio a {
+    color: var(--text-color-alt);
+}
+
+footer .volver-inicio a:hover {
+    color: var(--primary-color);
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    width: 100%;
+}
+
+footer img {
+    width: 30px; /* Ajusta el tamaño de las imágenes según sea necesario */
+}
+
+footer img:hover {
+    transform: scale(1.15);
+}
+
+/* Área para dejar tu opinión */
+#su-opinion {
+    width: 100%;
+}
+
+fieldset {
+    padding: 15px;
+    border: 1px solid var(--primary-color);
+}
+
+label {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+/* Area para redes sociales */
+.redes-sociales {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#redes-sociales ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none; 
+    padding: 0;
+}
+
+#redes-sociales img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+#redes-sociales img:hover {
+    transform: scale(1.15);
+}
+
